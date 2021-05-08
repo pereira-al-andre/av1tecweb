@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV1 Tec Web</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <main class="bloco w-70 auto">
+        <section id='produtos'>
+
+            <h1>Lista de produtos</h1>
+            <hr>
+
+            <br>
+
+            <fieldset>
+                <legend>Buscar cliente</legend>
+                <input type="text" placeholder="Buscar" id="termo">
+            </fieldset>
+
+            <hr>
+
+            <article id='lista_de_produtos'> </article>
+            <hr>
+            <button class="btn_success concluir">Ir ao carrinho</button>
+        </section>
+
+        <section id='carrinho'>
+            <h1>Carrinho</h1>
+            <hr>
+
+            <br>
+
+            <article id='lista_do_carrinho'> </article>            
+
+            <br>
+
+            <fieldset>
+                <legend>Total</legend>
+                <span class="label total"></span>
+            </fieldset>
+
+            <hr>
+            <button class="btn_success finalizar">Continuar</button>
+        </section>
+        <br>
+        <fieldset id="tela_de_pagamento">
+            <legend>Informações de pagamento</legend>
+            <div class="flex-row space">
+                <select id="pagamento">
+                    <option value="">VR</option>
+                    <option value="">VA</option>
+                    <option value="">Dinheiro</option>
+                </select>
+            </div>
+
+            <div class="flex-row space">
+                <input type="text" placeholder="Seu nome" id="nome">
+                <input type="tel" placeholder="Telefone" id="tel">
+                <input type="email" placeholder="Email" id="email">                
+            </div>
+
+            
+
+            <div class="flex-row space">
+                <input type="text" placeholder="CEP" id="cep">
+                <input type="text" placeholder="Nome da rua" id="rua">
+                <input type="text" placeholder="Número" id="numero">                
+            </div>
+
+            <button class="btn_success pagar">Finalizar</button>
+        </fieldset>
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
